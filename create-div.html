@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container{
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: cornflowerblue;
+        }
+        .box{
+            width: 100px;
+            height: 100px;
+            
+            background: red;
+            position: absolute;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        window.onload = function(){
+            let container = document.createElement('div');
+        container.classList.add('container');
+        document.querySelector('body').appendChild(container);
+
+        let box = document.createElement("div")
+        box.classList.add("box")
+        container.appendChild(box)
+        }
+            
+    </script>
+</body>
+</html>
